@@ -10,10 +10,7 @@ export default {
       fontFamily: {
         sans: ['Instrument Sans', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       },
-    }, 
-    // colors: {
-    //   primaryBackground: '#60AFFC', 
-    // },
+    }
   },
   plugins: [require('daisyui')]
 }

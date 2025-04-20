@@ -5,3 +5,7 @@
 @plugin "daisyui" {
     themes: light --default, dark;
 }
+
+html{
+    scroll-behavior: smooth;
+}

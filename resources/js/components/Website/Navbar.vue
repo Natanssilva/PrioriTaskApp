@@ -1,5 +1,5 @@
 <template>
-    <div class="navbar bg-[#60AFFC] shadow-sm">
+    <div class="navbar bg-[#60AFFC] shadow-sm fixed z-50">
         <div class="navbar-start">
             <div class="dropdown">
                 <div tabindex="0" role="button" class="lg:hidden pr-6">
