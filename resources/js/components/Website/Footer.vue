@@ -3,11 +3,11 @@
             class="footer footer-horizontal footer-center bg-[#60AFFC] text-base-content rounded p-10"
         >
             <nav class="grid grid-flow-col gap-4 font-semibold">
-                <a class="link link-hover">Home</a>
-                <a class="link link-hover">Sobre</a>
-                <a class="link link-hover">Serviços</a>
-                <a class="link link-hover">Funcionalidades</a>
-                <a class="link link-hover">Planos</a>
+                <a href="#home" class="link link-hover">Home</a>
+                <a href="#sobre" class="link link-hover">Sobre</a>
+                <a href="#services" class="link link-hover">Serviços</a>
+                <a href="#funcionalidades" class="link link-hover">Funcionalidades</a>
+                <a href="#planos" class="link link-hover">Planos</a>
             </nav>
             <nav>
                 <div class="grid grid-flow-col gap-4">
@@ -58,13 +58,5 @@
                     reservados por PrioriTask Ltd
                 </p>
             </aside>
-            <div class="bg-[#4c9beb] rounded-full shadow-lg p-3 cursor-pointer">
-                <a href="#home">
-                    <img
-                        src="/public/images/arrow_upward.svg"
-                        class="w-23 h-23 object-cover "
-                    />
-                </a>
-            </div>
         </footer>
 </template>

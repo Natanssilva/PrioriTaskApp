@@ -23,24 +23,24 @@
                     class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
                 >
                     <li>
-                        <a>Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li>
                         <a>Produto</a>
                         <ul class="p-2">
                             <li>
-                                <a>Serviços</a>
+                                <a href="#services">Serviços</a>
                             </li>
                             <li>
-                                <a>Funcionalidades</a>
+                                <a href="#funcionalidades">Funcionalidades</a>
                             </li>
                             <li>
-                                <a>Planos</a>
+                                <a href="#planos">Planos</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a>Sobre</a>
+                        <a href="#sobre">Sobre</a>
                     </li>
                 </ul>
             </div>
@@ -49,19 +49,27 @@
         <div class="navbar-center hidden lg:flex">
             <ul class="menu menu-horizontal px-1">
                 <li>
-                    <a>Home</a>
+                    <a href="#home">Home</a>
                 </li>
                 <li>
                     <details>
                         <summary>Produto</summary>
                         <ul class="p-2">
-                            <li><a>Serviços</a></li>
-                            <li><a>Funcionalidades</a></li>
-                            <li><a>Planos</a></li>
+                            <li>
+                                <a href="#services">Serviços</a>
+                            </li>
+                            <li>
+                                <a href="#funcionalidades">Funcionalidades</a>
+                            </li>
+                            <li>
+                                <a href="#planos">Planos</a>
+                            </li>
                         </ul>
                     </details>
                 </li>
-                <li><a>Sobre</a></li>
+                <li>
+                    <a href="#sobre">Sobre</a>
+                </li>
             </ul>
         </div>
     </div>

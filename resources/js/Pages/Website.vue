@@ -9,8 +9,7 @@ import Footer from "../components/Website/Footer.vue";
     <!-- Home -->
     <div
         id="home"
-        class="hero min-h-screen"
-        style="background-image: url(../public/images/hero-section.jpg)"
+        class="hero min-h-screen bg-[url(/public/images/hero-section.jpg)]"
     >
         <div class="hero-overlay"></div>
         <div class="hero-content text-neutral-content text-center">
@@ -26,11 +25,23 @@ import Footer from "../components/Website/Footer.vue";
                     que realmente importa. Torne seus dias mais leves,
                     organizados e produtivos.
                 </p>
-                
-                <button class="btn">
-                    Comece agora
-                    <img src="/public/images/arrow_right.svg" alt="">
-                </button>
+
+                <div class="flex justify-around items-center">
+                    <a href="/login">
+                        <button
+                            class="btn bg-[#60AFFC] border-[#60AFFC] shadow-none"
+                        >
+                            Acesse a plataforma web
+                            <img src="/public/images/arrow_right.svg" alt="" />
+                        </button>
+                    </a>
+                    <button
+                        class="btn bg-[#60AFFC] border-[#60AFFC] shadow-none"
+                    >
+                        Baixar App
+                        <img src="/public/images/download.svg" alt="" />
+                    </button>
+                </div>
             </div>
         </div>
     </div>
@@ -45,22 +56,21 @@ import Footer from "../components/Website/Footer.vue";
                 <div class="lg:pr-8 lg:pt-4">
                     <div id="text-services" class="lg:max-w-lg">
                         <h2
-                            class="text-base font-semibold leading-7 text-indigo-600"
+                            class="text-base font-semibold leading-7 text-[#60AFFC]"
                         >
                             Organização simples e fácil
                         </h2>
                         <p
                             class="mt-2 text-3xl font-bold tracking-tight text-gray-800 sm:text-4xl"
                         >
-                            Gerenciador de tarefas 
+                            Gerenciador de tarefas
                         </p>
                         <p class="mt-6 text-lg leading-8 text-gray-600">
                             Oferecemos uma abordagem personalizada para o
-                            gerenciamento de investimentos. Desde sugestões de
-                            portfólio até análises de desempenho, nosso sistema
-                            fornece as ferramentas necessárias para otimizar
-                            suas escolhas de investimento e alcançar seus
-                            objetivos financeiros.
+                            gerenciamento de tarefas. Nosso sistema fornece as
+                            ferramentas necessárias para otimizar suas escolhas
+                            do dia a dia e alinhar a organização com os objetos
+                            individuais.
                         </p>
                         <dl
                             class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
@@ -68,7 +78,7 @@ import Footer from "../components/Website/Footer.vue";
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
                                     <svg
-                                        class="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        class="absolute left-1 top-1 h-5 w-5 text-[#60AFFC]"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
                                         aria-hidden="true"
@@ -85,15 +95,15 @@ import Footer from "../components/Website/Footer.vue";
                                     Desfrute de dashboards intuitivos e
                                     visualizações gráficas que proporcionam uma
                                     visão abrangente e fácil de entender das
-                                    suas finanças. Acompanhe suas receitas,
-                                    despesas e investimentos em tempo real, tudo
-                                    em um só lugar.
+                                    suas tarefas do dia a dia. Acompanhe suas
+                                    tarefas, filtre e visualize pelo período que
+                                    desejar.
                                 </dd>
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
                                     <svg
-                                        class="absolute left-1 top-1 h-5 w-5 text-indigo-600"
+                                        class="absolute left-1 top-1 h-5 w-5 text-[#60AFFC]"
                                         viewBox="0 0 20 20"
                                         fill="currentColor"
                                         aria-hidden="true"
@@ -104,40 +114,47 @@ import Footer from "../components/Website/Footer.vue";
                                             clip-rule="evenodd"
                                         />
                                     </svg>
-                                    Orçamento Pessoal Inteligente:
+                                    Métodos de concentração:
                                 </dt>
                                 <dd class="inline">
-                                    Aperfeiçoe seu controle financeiro com nosso
-                                    sistema de orçamento inteligente. Estabeleça
-                                    metas, acompanhe despesas e receitas, e
-                                    receba insights personalizados para otimizar
-                                    seus gastos e economizar.
+                                    Aperfeiçoe suas tarefas utilizando métodos
+                                    para potencializar sua produtividade,cada
+                                    tarefa pode ser acoplada a um método, como
+                                    por exemplo pomodoro, flowtime e time
+                                    blocking.
                                 </dd>
                             </div>
                             <div class="relative pl-9">
                                 <dt class="inline font-semibold text-gray-900">
-                                    <svg
-                                        class="absolute left-1 top-1 h-5 w-5 text-indigo-600"
-                                        viewBox="0 0 20 20"
-                                        fill="currentColor"
-                                        aria-hidden="true"
-                                    >
-                                        <path
-                                            d="M4.632 3.533A2 2 0 016.577 2h6.846a2 2 0 011.945 1.533l1.976 8.234A3.489 3.489 0 0016 11.5H4c-.476 0-.93.095-1.344.267l1.976-8.234z"
-                                        />
-                                        <path
-                                            fill-rule="evenodd"
-                                            d="M4 13a2 2 0 100 4h12a2 2 0 100-4H4zm11.24 2a.75.75 0 01.75-.75H16a.75.75 0 01.75.75v.01a.75.75 0 01-.75.75h-.01a.75.75 0 01-.75-.75V15zm-2.25-.75a.75.75 0 00-.75.75v.01c0 .414.336.75.75.75H13a.75.75 0 00.75-.75V15a.75.75 0 00-.75-.75h-.01z"
-                                            clip-rule="evenodd"
-                                        />
-                                    </svg>
-                                    Análise de Despesas Detalhada:
+                                    <img
+                                        class="absolute left-1 top-1 h-5 w-5"
+                                        src="/public/images/pdf.svg"
+                                        alt=""
+                                    />
+
+                                    Relatórios de desempenho:
                                 </dt>
                                 <dd class="inline">
-                                    Ganhe insights profundos sobre seus padrões
-                                    de gastos. Analise categorias específicas,
-                                    identifique áreas para economia e tome
-                                    medidas para otimizar seu orçamento mensal.
+                                    Exporte relatórios PDFs com métricas de
+                                    desempenho semanal e mensal para
+                                    acompanhamento da produtividade.
+                                </dd>
+                            </div>
+
+                            <div class="relative pl-9">
+                                <dt class="inline font-semibold text-gray-900">
+                                    <img
+                                        class="absolute left-1 top-1 h-5 w-5"
+                                        src="/public/images/voice.svg"
+                                        alt=""
+                                    />
+
+                                    Integração por voz:
+                                </dt>
+                                <dd class="inline">
+                                    Crie tarefas de forma prática, sem
+                                    necessidade de digitar, apenas utilizando a
+                                    voz.
                                 </dd>
                             </div>
                         </dl>
@@ -145,9 +162,9 @@ import Footer from "../components/Website/Footer.vue";
                 </div>
                 <img
                     id="imagem-services"
-                    src="../prioriTask-website/images/finance.jpg"
+                    src="/public/images/home-prioritask.png"
                     alt="Product screenshot"
-                    class="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[50rem] md:-ml-4 lg:-ml-4 mt-4"
+                    class="w-full max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[50rem] md:-ml-4 lg:-ml-4 mt-4"
                 />
             </div>
         </div>
@@ -155,7 +172,7 @@ import Footer from "../components/Website/Footer.vue";
 
     <!-- Funcionalidades -->
     <div
-        id="features"
+        id="funcionalidades"
         class="flex flex-wrap justify-between bg-white py-24 sm:py-32"
     >
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
@@ -163,7 +180,7 @@ import Footer from "../components/Website/Footer.vue";
                 id="funcionalidades-title"
                 class="mx-auto max-w-2xl lg:text-center"
             >
-                <h2 class="text-base font-semibold leading-7 text-indigo-600">
+                <h2 class="text-base font-semibold leading-7 text-[#60AFFC]">
                     Disponível em Mobile
                 </h2>
                 <p
@@ -172,9 +189,9 @@ import Footer from "../components/Website/Footer.vue";
                     Tudo que você precisa em apenas um Aplicativo
                 </p>
                 <p class="mt-6 text-lg leading-8 text-gray-600">
-                    O melhor aplicativo financeiro desenvolvido tanto para
-                    usuários Web e para Mobile,com ênfase no melhor
-                    gerenciamento para cada usuário.
+                    O melhor aplicativo de gerenciamento pessoal desenvolvido
+                    tanto para usuários Web e para Mobile,com ênfase no melhor
+                    perfil para cada usuário.
                 </p>
             </div>
             <div
@@ -189,7 +206,7 @@ import Footer from "../components/Website/Footer.vue";
                             class="text-base font-semibold leading-7 text-gray-900"
                         >
                             <div
-                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#60AFFC]"
                             >
                                 <svg
                                     class="h-6 w-6 text-white"
@@ -206,13 +223,12 @@ import Footer from "../components/Website/Footer.vue";
                                     />
                                 </svg>
                             </div>
-                            Notificações de Contas e Vencimentos
+                            Cloud Computing
                         </dt>
                         <dd class="mt-2 text-base leading-7 text-gray-600">
-                            Receba alertas automáticos para contas a pagar,
-                            vencimentos de cartões de crédito e outras
-                            obrigações financeiras, ajudando a evitar atrasos e
-                            multas.
+                            Dados protegidos e alocados em Cloud Computing para
+                            fornecer maior segurança e privacidade no
+                            aplicativo.
                         </dd>
                     </div>
                     <div class="relative pl-16">
@@ -220,7 +236,7 @@ import Footer from "../components/Website/Footer.vue";
                             class="text-base font-semibold leading-7 text-gray-900"
                         >
                             <div
-                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#60AFFC]"
                             >
                                 <svg
                                     class="h-6 w-6 text-white"
@@ -241,8 +257,7 @@ import Footer from "../components/Website/Footer.vue";
                         </dt>
                         <dd class="mt-2 text-base leading-7 text-gray-600">
                             Os dados inseridos no app e no site, possuem
-                            criptografia Hash e são armazenados com segurança em
-                            uma base de dados em um serviço de Cloud.
+                            criptografia e segurança de ponta.
                         </dd>
                     </div>
                     <div class="relative pl-16">
@@ -250,7 +265,7 @@ import Footer from "../components/Website/Footer.vue";
                             class="text-base font-semibold leading-7 text-gray-900"
                         >
                             <div
-                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#60AFFC]"
                             >
                                 <svg
                                     class="h-6 w-6 text-white"
@@ -271,8 +286,8 @@ import Footer from "../components/Website/Footer.vue";
                         </dt>
                         <dd class="mt-2 text-base leading-7 text-gray-600">
                             Crie relatórios detalhados personalizados e exporte
-                            dados para diversos formatos, facilitando auditorias
-                            e análises mais profundas.
+                            dados PDF, facilitando auditorias e análises mais
+                            profundas da produtividade.
                         </dd>
                     </div>
                     <div class="relative pl-16">
@@ -280,7 +295,7 @@ import Footer from "../components/Website/Footer.vue";
                             class="text-base font-semibold leading-7 text-gray-900"
                         >
                             <div
-                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-indigo-600"
+                                class="absolute left-0 top-0 flex h-10 w-10 items-center justify-center rounded-lg bg-[#60AFFC]"
                             >
                                 <svg
                                     class="h-6 w-6 text-white"
@@ -302,30 +317,26 @@ import Footer from "../components/Website/Footer.vue";
                         <dd class="mt-2 text-base leading-7 text-gray-600">
                             Tenha acesso a suporte ao cliente dedicado a
                             qualquer momento para esclarecer dúvidas, resolver
-                            problemas e garantir uma experiência financeira
-                            tranquila.
+                            problemas e garantir uma experiência tranquila.
                         </dd>
                     </div>
                 </dl>
             </div>
         </div>
-        <div class="mockup-phone border-primary mt-10">
-            <div class="camera"></div>
-            <div class="display">
-                <div class="artboard artboard-demo phone-1">
-                    <img
-                        src="../prioriTask-website/images/hero-prime.jpg"
-                        alt=""
-                        class="w-full h-full object-cover"
-                    />
-                </div>
+        <!-- <div class="mockup-phone border-primary">
+            <div class="mockup-phone-camera"></div>
+            <div class="mockup-phone-display">
+                <img
+                    alt="wallpaper"
+                    src="https://img.daisyui.com/images/stock/453966.webp"
+                />
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- Planos -->
 
-    <div id="princing" class="bg-white py-24 sm:py-32">
+    <div id="planos" class="bg-white py-24 sm:py-32">
         <div class="mx-auto max-w-7xl px-6 lg:px-8">
             <div class="mx-auto max-w-2xl sm:text-center">
                 <h2
@@ -334,7 +345,7 @@ import Footer from "../components/Website/Footer.vue";
                     Plano Premium
                 </h2>
                 <p class="mt-6 text-lg leading-8 text-gray-600">
-                    Desbloqueie o Poder Total das Suas Finanças,
+                    Desbloqueie a sua produtividade.
                 </p>
             </div>
             <div
@@ -346,14 +357,14 @@ import Footer from "../components/Website/Footer.vue";
                     </h3>
                     <p class="mt-6 text-base leading-7 text-gray-600">
                         Com recursos exclusivos e ferramentas avançadas, você
-                        está prestes a transformar sua jornada financeira.
-                        Desfrute de uma gestão de dinheiro simplificada,
-                        análises detalhadas e suporte premium para atingir suas
-                        metas financeiras com facilidade.
+                        está prestes a transformar sua jornada pessoal. Desfrute
+                        de uma gestão de tarefas simplificada, análises
+                        detalhadas e suporte premium para atingir suas metas
+                        pessoais de maneira organizada e fácil.
                     </p>
                     <div class="mt-10 flex items-center gap-x-4">
                         <h4
-                            class="flex-none text-sm font-semibold leading-6 text-indigo-600"
+                            class="flex-none text-sm font-semibold leading-6 text-[#60AFFC]"
                         >
                             O que está incluido?
                         </h4>
@@ -365,7 +376,7 @@ import Footer from "../components/Website/Footer.vue";
                     >
                         <li class="flex gap-x-3">
                             <svg
-                                class="h-6 w-5 flex-none text-indigo-600"
+                                class="h-6 w-5 flex-none text-[#60AFFC]"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                                 aria-hidden="true"
@@ -380,7 +391,7 @@ import Footer from "../components/Website/Footer.vue";
                         </li>
                         <li class="flex gap-x-3">
                             <svg
-                                class="h-6 w-5 flex-none text-indigo-600"
+                                class="h-6 w-5 flex-none text-[#60AFFC]"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                                 aria-hidden="true"
@@ -395,7 +406,7 @@ import Footer from "../components/Website/Footer.vue";
                         </li>
                         <li class="flex gap-x-3">
                             <svg
-                                class="h-6 w-5 flex-none text-indigo-600"
+                                class="h-6 w-5 flex-none text-[#60AFFC]"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                                 aria-hidden="true"
@@ -411,7 +422,7 @@ import Footer from "../components/Website/Footer.vue";
                         </li>
                         <li class="flex gap-x-3">
                             <svg
-                                class="h-6 w-5 flex-none text-indigo-600"
+                                class="h-6 w-5 flex-none text-[#60AFFC]"
                                 viewBox="0 0 20 20"
                                 fill="currentColor"
                                 aria-hidden="true"
@@ -448,11 +459,12 @@ import Footer from "../components/Website/Footer.vue";
                                     >BRL</span
                                 >
                             </p>
-                            <a
-                                href="#"
-                                class="mt-10 block w-full rounded-md bg-gray-800 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-violet-600 hover:border-white hover:text-white active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300"
-                                >Adquirir assinatura</a
+                            <button
+                                class="btn mt-10 bg-[#60AFFC] border-[#60AFFC] shadow-none"
                             >
+                                Adquirir assinatura
+                                <img src="/public/images/paid.svg" alt="" />
+                            </button>
                             <p class="mt-6 text-xs leading-5 text-gray-600">
                                 Dados de pagamento seguros conforme padrões
                                 atuais.
@@ -466,13 +478,13 @@ import Footer from "../components/Website/Footer.vue";
 
     <!-- Sobre -->
 
-    <div id="about" class="hero min-h-screen bg-base-300">
+    <div id="sobre" class="hero min-h-screen bg-slate-50">
         <div
             class="hero-content flex-col lg:flex-row items-center justify-between"
         >
             <img
-                src="../prioriTask-website/images/perfil-pic.jpg"
-                class="w-80 h-80 object-cover rounded-full shadow-2xl"
+                src="/public/images/profile.jpg"
+                class="w-64 h-64 object-cover rounded-full shadow-2xl"
             />
 
             <div class="lg:ml-8 flex-1 text-center">
@@ -489,9 +501,23 @@ import Footer from "../components/Website/Footer.vue";
                     <a
                         href="https://www.linkedin.com/in/natanssilva/"
                         target="_blank"
-                        class="btn btn-accent-content border-white hover:bg-violet-600 hover:text-white hover:border-white active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 transform hover:scale-110 transition-all duration-300"
-                        >Me acompanhe no Linkedin</a
+                        class="btn bg-[#0967C2] text-white border-[#0059b3]"
                     >
+                        <svg
+                            aria-label="LinkedIn logo"
+                            width="16"
+                            height="16"
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 32 32"
+                        >
+                            <path
+                                fill="white"
+                                d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z"
+                                fill-rule="evenodd"
+                            ></path>
+                        </svg>
+                        Acompanhe pelo Linkedin
+                    </a>
                 </div>
             </div>
         </div>

@@ -195,7 +195,7 @@ function setVisibility(){
                     </p> -->
                 </div>
                 <div class="text-left">
-                    <span class="text-sm underline text-[#60AFFC]">
+                    <span class="text-sm hover:underline text-[#60AFFC]">
                         <a :href="isRegister ? '/login' : '/register'">{{ isRegister ? "Já possui uma conta? Entrar" : "Não possui uma conta? Cadastre-se" }}</a>
                     </span>
                 </div>
