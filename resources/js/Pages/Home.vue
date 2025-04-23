@@ -1,10 +1,7 @@
 <script setup>
-
+import SystemNavbar from "../components/SystemNavbar.vue";
 </script>
 
 <template>
-    <h1 class="underline"> Hello World!</h1>
-    <button class="btn btn-primary">Primary</button>
-
-
+    <SystemNavbar />
 </template>

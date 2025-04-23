@@ -12,7 +12,7 @@ class UserController extends Controller
     /**
      * @description Método que cadastra um usuário na aplicação
      *
-     * @return void
+     * 
      */
     public function register(Request $request){
 
@@ -28,7 +28,7 @@ class UserController extends Controller
         $user = User::create($requestFields);
 
         if($user){
-            auth()->login($user);
+            // auth()->login($user);
 
             return redirect('/login');
         }
