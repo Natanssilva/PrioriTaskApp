@@ -18,11 +18,11 @@ function setVisibility(){
 
 <template>
     <div
-        class="flex justify-center min-h-screen  p-14 bg-[#60AFFC]"
+        class="flex justify-center items-center min-h-screen p-5 bg-[#60AFFC]"
     >
         <!-- card -->
-        <div
-            class="bg-white rounded-2xl lg:w-[400px] md:w-[400px] sm:w-screen shadow-xl p-12 space-y-4"
+        <div 
+            class="bg-white rounded-2xl max-w-md w-full shadow-xl p-12 space-y-4"
         >
             <div class="text-center space-y-2">
                 <h1 class="text-3xl font-bold tracking-tighter">
